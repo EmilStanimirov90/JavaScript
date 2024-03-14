@@ -1,6 +1,8 @@
 function solve(age){
+    //let result = ""
     if (age >= 0 && age <=2) {
         console.log('baby')
+    //    result = "baby"
     } else if (age >= 3 && age <=13) {
         console.log('child')
     } else if (age >= 14 && age <=19) {
@@ -12,6 +14,7 @@ function solve(age){
     } else {
         console.log('out of bounds')
     }
+    //console.log(result)
 }
 
 solve(20)
