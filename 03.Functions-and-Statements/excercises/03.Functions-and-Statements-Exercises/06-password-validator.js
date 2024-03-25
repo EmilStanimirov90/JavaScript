@@ -5,28 +5,28 @@ const isStrong = password => password
     .filter(character => Number.isInteger(Number(character)))
     .length >= 2;
 
-function solve(password) {
-    let isValid = true;
+// function solve(password) {
+//     let isValid = true;
 
-    if (!isValidLength(password)) {
-        isValid = false;
-        console.log('Password must be between 6 and 10 characters')
-    }
+//     if (!isValidLength(password)) {
+//         isValid = false;
+//         console.log('Password must be between 6 and 10 characters')
+//     }
 
-    if (!isAlphaNumerical(password)) {
-        isValid = false;
-        console.log('Password must consist only of letters and digits');
-    }
+//     if (!isAlphaNumerical(password)) {
+//         isValid = false;
+//         console.log('Password must consist only of letters and digits');
+//     }
 
-    if (!isStrong(password)) {
-        isValid = false;
-        console.log('Password must have at least 2 digits');
-    }
+//     if (!isStrong(password)) {
+//         isValid = false;
+//         console.log('Password must have at least 2 digits');
+//     }
 
-    if (isValid) {
-        console.log('Password is valid');
-    }
-}
+//     if (isValid) {
+//         console.log('Password is valid');
+//     }
+// }
 
 function fancySolve(password) {
     const validations = [
