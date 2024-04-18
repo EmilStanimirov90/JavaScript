@@ -56,7 +56,6 @@ const loadMeals = async () => {
         createChangeButton.addEventListener('click', () => {
             
             currentMealId = meal._id
-
         
             foodInputElement.value = meal.food
             timeInputElement.value = meal.time
@@ -101,6 +100,7 @@ function clearInputData(){
 
 //EDIT BUTTON = PUT REQUEST
 editMealsButton.addEventListener('click', async () => {
+    
 
     const food = foodInputElement.value
     const time = timeInputElement.value
