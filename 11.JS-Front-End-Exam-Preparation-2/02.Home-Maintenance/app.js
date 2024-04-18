@@ -10,7 +10,7 @@ function solve() {
     const taskListUlElement = document.getElementById('task-list');	
     const doneTasksUlElement = document.getElementById('done-list');
 
-
+    // ADD BUTTON
 
     addButton.addEventListener('click', (e) => {
 
@@ -68,7 +68,35 @@ function solve() {
         actionInputElement.value = ''
         personInputElement.value = ''
 
-        editButton.addEventListener()
+        editButton.addEventListener('click', ()=> {
+            
+            //fill input
+            placeInputElement.value = placePElement.textContent
+            actionInputElement.value = actionPElement.textContent
+            personInputElement.value = personPElement.textContent
 
+            //delete Task
 
+            liElement.remove()
+        })
+
+    // DONE BUTTON
+        doneButton.addEventListener('click', ()=> {
+            
+            doneTasksUlElement.appendChild(liElement)
+            
+            buttonsContainerElement.remove()
+
+            //Create Delete button
+
+            const deleteButton = document.createElement('button')
+            deleteButton.classList.add('delete')
+            deleteButton.textContent = 'Delete'
+
+            liElement.appendChild(deleteButton)
+
+            deleteButton.addEventListener('click', () => {
+                liElement.remove()
+            })
+        })
 })}
