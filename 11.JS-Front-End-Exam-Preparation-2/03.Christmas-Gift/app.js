@@ -167,6 +167,7 @@ editButton.addEventListener('click', async ( event ) => {
     await loadPresents()
 })
 
+
 function getInputData() {
     const gift = presentIputElement.value
     const forPerson = forPersonIputElement.value
