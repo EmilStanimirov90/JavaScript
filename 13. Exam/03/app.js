@@ -117,10 +117,10 @@ const loadRecords = async () => {
     }
     
 }
-
+// Load Button Func
 loadRecordsButton.addEventListener('click', loadRecords);
 
-
+// add button func
 addRecordButton.addEventListener('click', async() => {
     
 
