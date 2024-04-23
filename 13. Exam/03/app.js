@@ -76,7 +76,7 @@ const loadRecords = async () => {
         buttonsContainerElement.appendChild(changeButton);
         buttonsContainerElement.appendChild(deleteButton);
 
-        //create li element
+        //create li element and attach to it
 
         recordLiElement = document.createElement('li');
         recordLiElement.classList.add('record');
